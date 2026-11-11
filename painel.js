@@ -182,8 +182,15 @@
     var el0 = document.getElementById('fg-cot'); tvMount(el0 ? (el0.getAttribute('data-lang') || 'pt').slice(0, 2) : 'pt');
     var el = document.getElementById('fg-cot'); if (!el) return;
     if (!document.getElementById('fgc-css')) { var s = document.createElement('style'); s.id = 'fgc-css'; s.textContent = CSS; document.head.appendChild(s); }
-    var url = BASE + 'dados.json?v=' + Math.floor(Date.now() / 300000);
-    fetch(url, {cache: 'no-cache'}).then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); })
+    /* Lê direto do GitHub (atualiza em ~5 min, sem depender da publicação do Pages); se falhar, usa a cópia do Pages. */
+    var v = Math.floor(Date.now() / 300000);
+    function get(u) { return fetch(u, {cache: 'no-cache'}).then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); }); }
+    var a = get('https://raw.githubusercontent.com/betschmidt123/forgiarini-cotacoes/main/dados.json?v=' + v).catch(function () { return null; });
+    var b = get(BASE + 'dados.json?v=' + v).catch(function () { return null; });
+    Promise.all([a, b]).then(function (r) {
+      var d = r[0] && r[1] ? (String(r[0].atualizado) >= String(r[1].atualizado) ? r[0] : r[1]) : (r[0] || r[1]);
+      if (!d) throw new Error('sem dados'); return d;
+    })
       .then(function (d) { render(el, d); })
       .catch(function () { var lang = (el.getAttribute('data-lang') || 'pt').slice(0, 2); el.classList.add('fgc'); el.innerHTML = '<p class="read">' + esc((T[lang] || T.pt).erro) + '</p>'; });
   }
