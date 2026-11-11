@@ -1,4 +1,4 @@
-# Atualização semanal do painel de cotações
+# Atualização diária (dias úteis) do painel de cotações
 
 Este repositório alimenta a página **Cotações** do site da Corretora Forgiarini
 (www.corretoraforgiarini.com/cotacoes, /es/cotizaciones e /en/rice-prices).
@@ -17,13 +17,15 @@ Este repositório alimenta a página **Cotações** do site da Corretora Forgiar
 5. `var` é a variação percentual (número, positivo ou negativo). Use `chip` + `tom` (`up`, `dn`, `nt`) para textos.
 6. Textos com tradução usam `{"pt": "...", "es": "...", "en": "..."}`.
 7. Depois de editar, valide: `python3 -c "import json;json.load(open('dados.json'))"`.
-8. Mensagem de commit: `Atualização semanal AAAA-MM-DD`.
+8. Mensagem de commit: `Atualização diária AAAA-MM-DD`.
+9. Fontes semanais ou mensais (Irga, Conab, Paraguai, Uruguai, Argentina, FOB, USDA) só mudam
+   quando publicarem dado novo; nos outros dias, mantenha o valor e a data anteriores.
 
 ## O que atualizar e onde buscar
 
 | Item no `dados.json` | Fonte | Frequência da fonte |
 |---|---|---|
-| `atualizado` | data do dia da atualização | toda semana |
+| `atualizado` | data do dia da atualização | todo dia útil |
 | `cambio_usd_brl` e USD/BRL (aba arroz) | fechamento do dólar comercial (Banco Central / imprensa) | diária |
 | Arroz casca RS (abas arroz e cepea) + `serie_rs` | Indicador Cepea/Esalq arroz em casca RS, via https://www.noticiasagricolas.com.br/cotacoes/arroz/arroz-em-casca-esalq-bbm | diária |
 | Arroz Chicago e vencimentos de arroz | USDA AMS Weekly National Rice Summary, https://www.ams.usda.gov/mnreports/ams_1655.pdf (ajustes CME) | semanal |
@@ -33,7 +35,7 @@ Este repositório alimenta a página **Cotações** do site da Corretora Forgiar
 | Produção BR | Conab, levantamento mensal de safra | mensal |
 | Paraguai exportação | Caparroz (via InfoNegocios, La Nación, Revista Foco, Forbes PY) | mensal |
 | Paraguai → Brasil | Agrostat/MAPA (via imprensa) | trimestral |
-| RS em US$/t | calculado: indicador RS × 20 ÷ dólar (`aprox: true`) | semanal |
+| RS em US$/t | calculado: indicador RS × 20 ÷ dólar (`aprox: true`) | diária |
 | Uruguai produtor | ACA (via Blasina y Asociados, El Observador, Tardáguila) | eventual |
 | Argentina exportação | Bolsa de Comercio de Rosario | anual/eventual |
 | FOB Uruguai 5% e EUA 2/4% | tabela mensal MAGyP Argentina (Osiriz/InfoArroz) | mensal |
