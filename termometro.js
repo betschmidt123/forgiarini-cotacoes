@@ -52,7 +52,7 @@
   };
 
   var CSS = "#fg-termo{--noite:#16281A;--lav:#2E4A2F;--broto:#D3E3A4;--grao:#F7F3EA;--ouro:#B8862B;--up:#9FD36B;--dn:#E8836B;--mono:'JetBrains Mono',ui-monospace,Menlo,Consolas,monospace;--bg:#0F1C12;--card:#122016;--line:#2E4A2F;--mut:#A9B59A;--dim:#7F8C72;background:var(--bg);color:var(--grao);font-family:'Figtree',system-ui,sans-serif;padding:8px 0 8px}" +
-    "#fg-termo *{box-sizing:border-box}#fg-termo [hidden]{display:none!important}#fg-termo .w{max-width:1100px;margin:0 auto;padding:0 24px}" +
+    "#fg-termo h2,#fg-termo h3,#fg-termo h4{color:#F7F3EA!important;font-family:'Red Hat Display',sans-serif!important;letter-spacing:-.005em!important;text-transform:none!important}#fg-termo .q h3{font-weight:500!important}#fg-termo .bar-top h2{font-weight:400!important}#fg-termo *{box-sizing:border-box}#fg-termo [hidden]{display:none!important}#fg-termo .w{max-width:1100px;margin:0 auto;padding:0 24px}" +
     "#fg-termo .bar-top{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap;margin:44px 0 18px}" +
     "#fg-termo .bar-top h2{font:400 26px/1.2 'Red Hat Display',sans-serif;margin:0;color:var(--grao)}" +
     "#fg-termo .filters{display:flex;gap:6px;flex-wrap:wrap}" +
