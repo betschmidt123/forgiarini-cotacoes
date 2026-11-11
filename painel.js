@@ -142,7 +142,27 @@
     });
     if (d.serie_rs && d.serie_rs.length > 1) grafico(el.querySelector('.chartbox'), d.serie_rs, lang, t);
   }
+
+  /* Garante os quadros da TradingView: se o script deles não montar o quadro, monta direto por iframe. */
+  function tvFallback() {
+    var map = {'ticker-tape': 'ticker-tape', 'symbol-overview': 'symbol-overview', 'market-quotes': 'market-quotes'};
+    document.querySelectorAll('.tradingview-widget-container').forEach(function (c) {
+      if (c.querySelector('iframe')) return;
+      var sc = c.querySelector('script[src*="embed-widget-"]'); if (!sc) return;
+      var m = sc.src.match(/embed-widget-([a-z-]+)\.js/); if (!m || !map[m[1]]) return;
+      var cfg; try { cfg = JSON.parse(sc.textContent || sc.innerHTML); } catch (e) { return; }
+      var loc = cfg.locale || 'br';
+      var h = m[1] === 'ticker-tape' ? 46 : (c.parentNode && c.parentNode.clientHeight ? c.parentNode.clientHeight : 460);
+      if (m[1] === 'ticker-tape') { cfg.width = '100%'; cfg.height = 46; }
+      var f = document.createElement('iframe');
+      f.src = 'https://s.tradingview.com/embed-widget/' + map[m[1]] + '/?locale=' + encodeURIComponent(loc) + '#' + encodeURIComponent(JSON.stringify(cfg));
+      f.setAttribute('frameborder', '0'); f.setAttribute('allowtransparency', 'true'); f.setAttribute('scrolling', 'no'); f.title = m[1];
+      f.style.cssText = 'width:100%;height:' + h + 'px;border:0;display:block;background:transparent';
+      var w = c.querySelector('.tradingview-widget-container__widget'); (w || c).innerHTML = ''; (w || c).appendChild(f);
+    });
+  }
   function start() {
+    setTimeout(tvFallback, 4500);
     var el = document.getElementById('fg-cot'); if (!el) return;
     if (!document.getElementById('fgc-css')) { var s = document.createElement('style'); s.id = 'fgc-css'; s.textContent = CSS; document.head.appendChild(s); }
     var url = BASE + 'dados.json?v=' + Math.floor(Date.now() / 300000);
