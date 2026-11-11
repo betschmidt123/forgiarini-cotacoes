@@ -1,0 +1,76 @@
+{
+  "atualizado": "2026-11-10",
+  "cambio_usd_brl": 5.52,
+  "leitura": {
+    "pt": "A saca de arroz em casca segue firme acima de R$ 80 no Rio Grande do Sul, sustentada pela oferta curta e pela área menor da safra 2026/27. O plantio chegou a 75,7% da área prevista. Em Chicago, o arroz oscila perto de US$ 18 por 100 libras, e na Ásia os preços de exportação da Tailândia e do Vietnã estão nos maiores níveis em quase dois anos.",
+    "es": "La bolsa de arroz con cáscara sigue firme por encima de R$ 80 en Rio Grande do Sul, sostenida por la oferta corta y la menor superficie de la zafra 2026/27. La siembra llegó al 75,7% de la superficie prevista. En Chicago, el arroz oscila cerca de US$ 18 por 100 libras, y en Asia los precios de exportación de Tailandia y Vietnam están en sus niveles más altos en casi dos años.",
+    "en": "The paddy rice sack price remains firm above R$ 80 in Rio Grande do Sul, supported by tight supply and the smaller 2026/27 planted area. Planting has reached 75.7% of the projected area. In Chicago, rough rice trades near US$ 18 per hundredweight, and Thai and Vietnamese export prices are at their highest in almost two years."
+  },
+  "abas": [
+    {
+      "id": "arroz",
+      "titulo": {"pt": "Arroz", "es": "Arroz", "en": "Rice"},
+      "colunas": "padrao",
+      "itens": [
+        {"tk": {"pt": "ARROZ CASCA RS", "es": "ARROZ CÁSCARA RS", "en": "PADDY RICE RS"}, "sub": {"pt": "Saca de 50 kg", "es": "Bolsa de 50 kg", "en": "50 kg sack"}, "v": 81.06, "dec": 2, "pre": "R$ ", "var": 0.06, "data": "09/11/2026", "fonte": "Cepea/Esalq"},
+        {"tk": {"pt": "ARROZ CHICAGO", "es": "ARROZ CHICAGO", "en": "RICE CHICAGO"}, "link": "https://www.cmegroup.com/markets/agriculture/grains/rough-rice.html", "destaque": true, "sub": {"pt": "Rough rice, jan/2027 · US$ por 100 lb", "es": "Rough rice, ene/2027 · US$ por 100 lb", "en": "Rough rice, Jan 2027 · US$ per cwt"}, "v": 18.15, "dec": 2, "pre": "US$ ", "var": -0.58, "nota": {"pt": "≈ R$ 110 por saca de 50 kg (paridade teórica)", "es": "≈ R$ 110 por bolsa de 50 kg (paridad teórica)", "en": "≈ R$ 110 per 50 kg sack (theoretical parity)"}, "data": "09/11/2026", "fonte": "CME/CBOT, via USDA"},
+        {"tk": {"pt": "USD/BRL", "es": "USD/BRL", "en": "USD/BRL"}, "sub": {"pt": "Dólar comercial", "es": "Dólar comercial", "en": "Commercial dollar"}, "v": 5.52, "dec": 2, "pre": "R$ ", "var": 0.44, "data": "06/11/2026", "fonte": {"pt": "Fechamento", "es": "Cierre", "en": "Close"}},
+        {"tk": {"pt": "PLANTIO RS", "es": "SIEMBRA RS", "en": "PLANTING RS"}, "sub": {"pt": "Área semeada 2026/27", "es": "Superficie sembrada 2026/27", "en": "Planted area 2026/27"}, "v": 75.7, "dec": 1, "suf": "%", "chip": {"pt": "652 mil ha", "es": "652 mil ha", "en": "652k ha"}, "tom": "nt", "data": "05/11/2026", "fonte": "Irga"},
+        {"tk": {"pt": "PRODUÇÃO BR", "es": "PRODUCCIÓN BR", "en": "BRAZIL OUTPUT"}, "sub": {"pt": "Estimativa 2026/27", "es": "Estimación 2026/27", "en": "2026/27 estimate"}, "v": 10.8, "dec": 1, "suf": {"pt": " mi t", "es": " mill. t", "en": " M t"}, "var": -2.9, "data": "15/10/2026", "fonte": "Conab"}
+      ]
+    },
+    {
+      "id": "chicago",
+      "titulo": {"pt": "Chicago · vencimentos", "es": "Chicago · vencimientos", "en": "Chicago · contracts"},
+      "colunas": "contratos",
+      "itens": [
+        {"tk": {"pt": "ARROZ NOV/26", "es": "ARROZ NOV/26", "en": "RICE NOV 26"}, "sub": {"pt": "US$ por 100 lb", "es": "US$ por 100 lb", "en": "US$ per cwt"}, "v": 17.76, "dec": 2, "var": -0.48, "data": "09/11/2026", "fonte": "CME, via USDA"},
+        {"tk": {"pt": "ARROZ JAN/27", "es": "ARROZ ENE/27", "en": "RICE JAN 27"}, "sub": {"pt": "US$ por 100 lb", "es": "US$ por 100 lb", "en": "US$ per cwt"}, "v": 18.15, "dec": 2, "var": -0.58, "data": "09/11/2026", "fonte": "CME, via USDA"},
+        {"tk": {"pt": "ARROZ MAR/27", "es": "ARROZ MAR/27", "en": "RICE MAR 27"}, "sub": {"pt": "US$ por 100 lb", "es": "US$ por 100 lb", "en": "US$ per cwt"}, "v": 18.565, "dec": 3, "var": -0.56, "data": "09/11/2026", "fonte": "CME, via USDA"},
+        {"tk": {"pt": "SOJA NOV/26", "es": "SOJA NOV/26", "en": "SOYBEANS NOV 26"}, "sub": {"pt": "US$ por bushel", "es": "US$ por bushel", "en": "US$ per bushel"}, "v": 11.8225, "dec": 4, "var": -0.57, "data": "09/11/2026", "fonte": "CME Group"},
+        {"tk": {"pt": "SOJA JAN/27", "es": "SOJA ENE/27", "en": "SOYBEANS JAN 27"}, "sub": {"pt": "US$ por bushel", "es": "US$ por bushel", "en": "US$ per bushel"}, "v": 11.8825, "dec": 4, "var": -0.46, "data": "09/11/2026", "fonte": "CME Group"}
+      ]
+    },
+    {
+      "id": "cepea",
+      "titulo": {"pt": "Indicadores Cepea", "es": "Indicadores Cepea", "en": "Cepea indicators"},
+      "colunas": "padrao",
+      "itens": [
+        {"tk": {"pt": "ARROZ EM CASCA", "es": "ARROZ CON CÁSCARA", "en": "PADDY RICE"}, "sub": {"pt": "RS · saca de 50 kg", "es": "RS · bolsa de 50 kg", "en": "RS · 50 kg sack"}, "v": 81.06, "dec": 2, "pre": "R$ ", "var": 0.06, "data": "09/11/2026", "fonte": "Cepea/Esalq"},
+        {"tk": {"pt": "SOJA", "es": "SOJA", "en": "SOYBEANS"}, "sub": {"pt": "Paraná · saca de 60 kg", "es": "Paraná · bolsa de 60 kg", "en": "Paraná · 60 kg sack"}, "v": 158.62, "dec": 2, "pre": "R$ ", "data": "09/11/2026", "fonte": "Cepea/Esalq"},
+        {"tk": {"pt": "MILHO", "es": "MAÍZ", "en": "CORN"}, "sub": {"pt": "Saca de 60 kg", "es": "Bolsa de 60 kg", "en": "60 kg sack"}, "v": 66.88, "dec": 2, "pre": "R$ ", "data": "09/11/2026", "fonte": "Cepea/Esalq"}
+      ]
+    },
+    {
+      "id": "mundo",
+      "titulo": {"pt": "Mercosul e mundo", "es": "Mercosur y mundo", "en": "Mercosur & world"},
+      "colunas": "padrao",
+      "grupos": [
+        {
+          "titulo": {"pt": "Arroz em casca · produtor e exportação", "es": "Arroz con cáscara · productor y exportación", "en": "Paddy rice · farm gate and export"},
+          "itens": [
+            {"flag": "PY", "tk": {"pt": "PARAGUAI · EXPORTAÇÃO", "es": "PARAGUAY · EXPORTACIÓN", "en": "PARAGUAY · EXPORTS"}, "sub": {"pt": "Preço médio, jan–set/2026 (82% ao Brasil)", "es": "Precio promedio, ene–sep/2026 (82% a Brasil)", "en": "Average price, Jan–Sep 2026 (82% to Brazil)"}, "v": 224, "dec": 0, "pre": "US$ ", "suf": "/t", "aprox": true, "data": {"pt": "Jan–set/2026", "es": "Ene–sep/2026", "en": "Jan–Sep 2026"}, "fonte": {"pt": "Caparroz · média calculada", "es": "Caparroz · promedio calculado", "en": "Caparroz · calculated average"}},
+            {"flag": "PY", "tk": {"pt": "PARAGUAI → BRASIL", "es": "PARAGUAY → BRASIL", "en": "PARAGUAY → BRAZIL"}, "sub": {"pt": "Preço médio pago pelo Brasil", "es": "Precio promedio pagado por Brasil", "en": "Average price paid by Brazil"}, "v": 258.59, "dec": 2, "pre": "US$ ", "suf": "/t", "data": {"pt": "1º tri/2026", "es": "1.er trim./2026", "en": "Q1 2026"}, "fonte": "Agrostat/MAPA"},
+            {"flag": "BR", "tk": {"pt": "RIO GRANDE DO SUL", "es": "RIO GRANDE DO SUL", "en": "RIO GRANDE DO SUL"}, "sub": {"pt": "Indicador Cepea em dólar por tonelada", "es": "Indicador Cepea en dólares por tonelada", "en": "Cepea indicator in US$ per tonne"}, "v": 294, "dec": 0, "pre": "US$ ", "suf": "/t", "aprox": true, "data": "09/11/2026", "fonte": {"pt": "Cepea/Esalq · conversão pelo dólar", "es": "Cepea/Esalq · conversión al dólar", "en": "Cepea/Esalq · converted at USD/BRL"}},
+            {"flag": "UY", "tk": {"pt": "URUGUAI · PRODUTOR", "es": "URUGUAY · PRODUCTOR", "en": "URUGUAY · GROWER"}, "sub": {"pt": "Preço provisório 2025/26, bolsa de 50 kg", "es": "Precio provisorio 2025/26, bolsa de 50 kg", "en": "Provisional price 2025/26, 50 kg bag"}, "v": 9.10, "dec": 2, "pre": "US$ ", "suf": {"pt": "/bolsa", "es": "/bolsa", "en": "/bag"}, "chip": {"pt": "definitivo deve ser maior", "es": "definitivo será mayor", "en": "final price expected higher"}, "tom": "up", "data": {"pt": "Set/2026", "es": "Sep/2026", "en": "Sep 2026"}, "fonte": "ACA"},
+            {"flag": "AR", "tk": {"pt": "ARGENTINA · EXPORTAÇÃO", "es": "ARGENTINA · EXPORTACIÓN", "en": "ARGENTINA · EXPORTS"}, "sub": {"pt": "Média de 2025 · 502 mil t exportadas", "es": "Promedio 2025 · 502 mil t exportadas", "en": "2025 average · 502k t exported"}, "v": 516, "dec": 0, "pre": "US$ ", "suf": "/t", "aprox": true, "data": {"pt": "Ano 2025", "es": "Año 2025", "en": "Year 2025"}, "fonte": {"pt": "Bolsa de Comercio de Rosario · média calculada", "es": "Bolsa de Comercio de Rosario · promedio calculado", "en": "Rosario Board of Trade · calculated average"}}
+          ]
+        },
+        {
+          "titulo": {"pt": "Arroz beneficiado · FOB, referência mundial", "es": "Arroz elaborado · FOB, referencia mundial", "en": "Milled rice · FOB, world benchmarks"},
+          "itens": [
+            {"flag": "UY", "tk": {"pt": "URUGUAI 5%", "es": "URUGUAY 5%", "en": "URUGUAY 5%"}, "sub": {"pt": "Branco, FOB", "es": "Blanco, FOB", "en": "White, FOB"}, "v": 598, "dec": 0, "pre": "US$ ", "suf": "/t", "var": 5.8, "base": {"pt": "no mês", "es": "en el mes", "en": "m/m"}, "data": {"pt": "Out/2026", "es": "Oct/2026", "en": "Oct 2026"}, "fonte": "Osiriz/InfoArroz"},
+            {"flag": "US", "tk": {"pt": "ESTADOS UNIDOS 2/4%", "es": "ESTADOS UNIDOS 2/4%", "en": "UNITED STATES 2/4%"}, "sub": {"pt": "Longo grão, FOB", "es": "Grano largo, FOB", "en": "Long grain, FOB"}, "v": 673, "dec": 0, "pre": "US$ ", "suf": "/t", "var": 10.9, "base": {"pt": "no mês", "es": "en el mes", "en": "m/m"}, "data": {"pt": "Out/2026", "es": "Oct/2026", "en": "Oct 2026"}, "fonte": "Osiriz/InfoArroz"},
+            {"flag": "TH", "tk": {"pt": "TAILÂNDIA 5%", "es": "TAILANDIA 5%", "en": "THAILAND 5%"}, "sub": {"pt": "Branco, FOB Bangkok", "es": "Blanco, FOB Bangkok", "en": "White, FOB Bangkok"}, "v": [490, 495], "dec": 0, "pre": "US$ ", "suf": "/t", "chip": {"pt": "▲ maior desde jan/2025", "es": "▲ máximo desde ene/2025", "en": "▲ highest since Jan 2025"}, "tom": "up", "data": "06/11/2026", "fonte": "Reuters, via InfoArroz"},
+            {"flag": "VN", "tk": {"pt": "VIETNÃ 5%", "es": "VIETNAM 5%", "en": "VIETNAM 5%"}, "sub": {"pt": "Branco, FOB", "es": "Blanco, FOB", "en": "White, FOB"}, "v": [480, 490], "dec": 0, "pre": "US$ ", "suf": "/t", "chip": {"pt": "▲ na semana", "es": "▲ en la semana", "en": "▲ w/w"}, "tom": "up", "data": "06/11/2026", "fonte": "Reuters, via InfoArroz"},
+            {"flag": "IN", "tk": {"pt": "ÍNDIA 5% PARBOILIZADO", "es": "INDIA 5% PARBOILIZADO", "en": "INDIA 5% PARBOILED"}, "sub": {"pt": "FOB", "es": "FOB", "en": "FOB"}, "v": [382, 386], "dec": 0, "pre": "US$ ", "suf": "/t", "chip": {"pt": "▼ na semana", "es": "▼ en la semana", "en": "▼ w/w"}, "tom": "dn", "data": "06/11/2026", "fonte": "Reuters, via InfoArroz"}
+          ]
+        }
+      ]
+    }
+  ],
+  "serie_rs": [
+    ["2026-10-26", 82.04], ["2026-10-27", 82.28], ["2026-10-28", 82.13], ["2026-10-29", 82.40], ["2026-10-30", 82.20],
+    ["2026-11-03", 82.27], ["2026-11-04", 82.01], ["2026-11-05", 81.16], ["2026-11-06", 81.01], ["2026-11-09", 81.06]
+  ]
+}
