@@ -143,26 +143,43 @@
     if (d.serie_rs && d.serie_rs.length > 1) grafico(el.querySelector('.chartbox'), d.serie_rs, lang, t);
   }
 
-  /* Garante os quadros da TradingView: se o script deles não montar o quadro, monta direto por iframe. */
-  function tvFallback() {
-    var map = {'ticker-tape': 'ticker-tape', 'symbol-overview': 'symbol-overview', 'market-quotes': 'market-quotes'};
-    document.querySelectorAll('.tradingview-widget-container').forEach(function (c) {
-      if (c.querySelector('iframe')) return;
-      var sc = c.querySelector('script[src*="embed-widget-"]'); if (!sc) return;
-      var m = sc.src.match(/embed-widget-([a-z-]+)\.js/); if (!m || !map[m[1]]) return;
-      var cfg; try { cfg = JSON.parse(sc.textContent || sc.innerHTML); } catch (e) { return; }
-      var loc = cfg.locale || 'br';
-      var h = m[1] === 'ticker-tape' ? 46 : (c.parentNode && c.parentNode.clientHeight ? c.parentNode.clientHeight : 460);
-      if (m[1] === 'ticker-tape') { cfg.width = '100%'; cfg.height = 46; }
+  /* Quadros ao vivo (TradingView). Arroz de Chicago não tem cotação gratuita ao vivo: fica no painel semanal.
+     Grãos de Chicago via contratos que acompanham a bolsa (CFD Capital.com). */
+  var TV = {
+    pt: {loc: 'br', g: ['Grãos (Chicago)', 'B3', 'Câmbio', 'Índices'], n: {soja: 'Soja (Chicago)', milho: 'Milho (Chicago)', trigo: 'Trigo (Chicago)', farelo: 'Farelo de soja (Chicago)', ccm: 'Milho B3', sjc: 'Soja B3 (US$/saca)', bgi: 'Boi gordo B3', dol: 'Dólar futuro B3', brl: 'Dólar / Real', pyg: 'Dólar / Guarani', ars: 'Dólar / Peso argentino', uyu: 'Dólar / Peso uruguaio', dxy: 'Índice do dólar (DXY)', ibov: 'Ibovespa', spx: 'S&P 500', brent: 'Petróleo Brent'}},
+    es: {loc: 'es', g: ['Granos (Chicago)', 'B3 (Brasil)', 'Tipo de cambio', 'Índices'], n: {soja: 'Soja (Chicago)', milho: 'Maíz (Chicago)', trigo: 'Trigo (Chicago)', farelo: 'Harina de soja (Chicago)', ccm: 'Maíz B3', sjc: 'Soja B3 (US$/bolsa)', bgi: 'Novillo B3', dol: 'Dólar futuro B3', brl: 'Dólar / Real', pyg: 'Dólar / Guaraní', ars: 'Dólar / Peso argentino', uyu: 'Dólar / Peso uruguayo', dxy: 'Índice del dólar (DXY)', ibov: 'Ibovespa', spx: 'S&P 500', brent: 'Petróleo Brent'}},
+    en: {loc: 'en', g: ['Grains (Chicago)', 'B3 (Brazil)', 'Currencies', 'Indices'], n: {soja: 'Soybeans (Chicago)', milho: 'Corn (Chicago)', trigo: 'Wheat (Chicago)', farelo: 'Soybean meal (Chicago)', ccm: 'Corn B3', sjc: 'Soybeans B3 (US$/bag)', bgi: 'Live cattle B3', dol: 'Dollar futures B3', brl: 'USD / BRL', pyg: 'USD / PYG', ars: 'USD / ARS', uyu: 'USD / UYU', dxy: 'US Dollar Index (DXY)', ibov: 'Ibovespa', spx: 'S&P 500', brent: 'Brent crude'}}
+  };
+  var SYM = {soja: 'CAPITALCOM:SOYBEAN', milho: 'CAPITALCOM:CORN', trigo: 'CAPITALCOM:WHEAT', farelo: 'CAPITALCOM:SOYBEANMEAL', ccm: 'BMFBOVESPA:CCM1!', sjc: 'BMFBOVESPA:SJC1!', bgi: 'BMFBOVESPA:BGI1!', dol: 'BMFBOVESPA:DOL1!', brl: 'FX_IDC:USDBRL', pyg: 'FX_IDC:USDPYG', ars: 'FX_IDC:USDARS', uyu: 'FX_IDC:USDUYU', dxy: 'CAPITALCOM:DXY', ibov: 'BMFBOVESPA:IBOV', spx: 'FOREXCOM:SPXUSD', brent: 'TVC:UKOIL'};
+  function tvCfg(kind, lang) {
+    var t = TV[lang] || TV.pt, n = t.n;
+    function s(k) { return {name: SYM[k], displayName: n[k]}; }
+    if (kind === 'tape') return {symbols: ['soja', 'milho', 'trigo', 'brl', 'pyg', 'ccm', 'bgi', 'ibov'].map(function (k) { return {proName: SYM[k], title: n[k]}; }), showSymbolLogo: false, isTransparent: true, displayMode: 'adaptive', colorTheme: 'dark', locale: t.loc, width: '100%', height: 46};
+    if (kind === 'overview') return {symbols: ['soja', 'milho', 'trigo', 'brl', 'pyg', 'ccm'].map(function (k) { return [n[k], SYM[k] + '|3M']; }), chartOnly: false, width: '100%', height: '100%', locale: t.loc, colorTheme: 'dark', autosize: true, showVolume: false, hideDateRanges: false, scalePosition: 'right', scaleMode: 'Normal', fontSize: '11', noTimeScale: false, valuesTracking: '1', changeMode: 'price-and-percent', chartType: 'area', lineWidth: 2, lineType: 0, dateRanges: ['1d|1', '1m|30', '3m|60', '12m|1D', '60m|1W', 'all|1M'], isTransparent: true, lineColor: '#9FD36B', topColor: 'rgba(159,211,107,0.25)', bottomColor: 'rgba(159,211,107,0)'};
+    return {width: '100%', height: '100%', symbolsGroups: [
+      {name: t.g[0], symbols: ['soja', 'milho', 'trigo', 'farelo'].map(s)},
+      {name: t.g[1], symbols: ['ccm', 'sjc', 'bgi', 'dol'].map(s)},
+      {name: t.g[2], symbols: ['brl', 'pyg', 'ars', 'uyu', 'dxy'].map(s)},
+      {name: t.g[3], symbols: ['ibov', 'spx', 'brent'].map(s)}], showSymbolLogo: false, isTransparent: true, colorTheme: 'dark', locale: t.loc};
+  }
+  function tvMount(lang) {
+    var types = {tape: 'ticker-tape', overview: 'symbol-overview', quotes: 'market-quotes'};
+    var kinds = {'ticker-tape': 'tape', 'symbol-overview': 'overview', 'market-quotes': 'quotes'};
+    document.querySelectorAll('[data-tv], .tradingview-widget-container').forEach(function (box) {
+      var kind = box.getAttribute('data-tv');
+      if (!kind) { var sc = box.querySelector('script[src*="embed-widget-"]'), m = sc && sc.src.match(/embed-widget-([a-z-]+)\.js/); kind = m && kinds[m[1]]; }
+      if (!types[kind] || box.getAttribute('data-fgtv')) return;
+      box.setAttribute('data-fgtv', '1');
+      var cfg = tvCfg(kind, lang);
       var f = document.createElement('iframe');
-      f.src = 'https://s.tradingview.com/embed-widget/' + map[m[1]] + '/?locale=' + encodeURIComponent(loc) + '#' + encodeURIComponent(JSON.stringify(cfg));
-      f.setAttribute('frameborder', '0'); f.setAttribute('allowtransparency', 'true'); f.setAttribute('scrolling', 'no'); f.title = m[1];
-      f.style.cssText = 'width:100%;height:' + h + 'px;border:0;display:block;background:transparent';
-      var w = c.querySelector('.tradingview-widget-container__widget'); (w || c).innerHTML = ''; (w || c).appendChild(f);
+      f.src = 'https://s.tradingview.com/embed-widget/' + types[kind] + '/?locale=' + encodeURIComponent(cfg.locale) + '#' + encodeURIComponent(JSON.stringify(cfg));
+      f.setAttribute('frameborder', '0'); f.setAttribute('allowtransparency', 'true'); f.setAttribute('scrolling', 'no'); f.setAttribute('loading', kind === 'tape' ? 'eager' : 'lazy'); f.title = types[kind];
+      f.style.cssText = 'width:100%;height:' + (kind === 'tape' ? '46px' : '100%') + ';border:0;display:block;background:transparent';
+      box.innerHTML = ''; box.appendChild(f);
     });
   }
   function start() {
-    setTimeout(tvFallback, 4500);
+    var el0 = document.getElementById('fg-cot'); tvMount(el0 ? (el0.getAttribute('data-lang') || 'pt').slice(0, 2) : 'pt');
     var el = document.getElementById('fg-cot'); if (!el) return;
     if (!document.getElementById('fgc-css')) { var s = document.createElement('style'); s.id = 'fgc-css'; s.textContent = CSS; document.head.appendChild(s); }
     var url = BASE + 'dados.json?v=' + Math.floor(Date.now() / 300000);
