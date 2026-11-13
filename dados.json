@@ -1,10 +1,10 @@
 {
- "atualizado": "2026-11-12",
- "cambio_usd_brl": 5.56,
+ "atualizado": "2026-11-13",
+ "cambio_usd_brl": 5.65,
  "leitura": {
-  "pt": "A saca de arroz em casca no Rio Grande do Sul ficou praticamente estável em R$ 81,07 no dia 11/11, pelo Cepea/Esalq. O dólar recuou 0,42% e fechou em R$ 5,56, o que deixa a paridade teórica do arroz de Chicago (jan/27, US$ 18,15) perto de R$ 111 por saca. A soja em Chicago subiu 0,37% no contrato de novembro.",
-  "es": "La bolsa de arroz con cáscara en Rio Grande do Sul quedó prácticamente estable en R$ 81,07 el 11/11, según Cepea/Esalq. El dólar bajó 0,42% y cerró en R$ 5,56, lo que deja la paridad teórica del arroz de Chicago (ene/27, US$ 18,15) cerca de R$ 111 por bolsa. La soja en Chicago subió 0,37% en el contrato de noviembre.",
-  "en": "Rio Grande do Sul paddy rice was virtually flat at R$ 81.07 per sack on Nov 11, according to Cepea/Esalq. The dollar fell 0.42% to close at R$ 5.56, leaving the theoretical parity of Chicago rough rice (Jan 27, US$ 18.15) near R$ 111 per sack. Chicago soybeans rose 0.37% in the November contract."
+  "pt": "O dólar subiu 1,58% em 12/11 e fechou em R$ 5,65, o que eleva a paridade teórica do arroz de Chicago (jan/27, US$ 18,15) para cerca de R$ 113 por saca. No Rio Grande do Sul, a saca de arroz em casca segue perto de R$ 81, pelo último indicador Cepea/Esalq (11/11).",
+  "es": "El dólar subió 1,58% el 12/11 y cerró en R$ 5,65, lo que eleva la paridad teórica del arroz de Chicago (ene/27, US$ 18,15) a cerca de R$ 113 por bolsa. En Rio Grande do Sul, la bolsa de arroz con cáscara sigue cerca de R$ 81, según el último indicador Cepea/Esalq (11/11).",
+  "en": "The dollar rose 1.58% on Nov 12 to close at R$ 5.65, lifting the theoretical parity of Chicago rough rice (Jan 27, US$ 18.15) to about R$ 113 per sack. In Rio Grande do Sul, paddy rice stays near R$ 81 per sack, according to the latest Cepea/Esalq indicator (Nov 11)."
  },
  "abas": [
   {
@@ -52,9 +52,9 @@
      "pre": "US$ ",
      "var": -0.58,
      "nota": {
-      "pt": "≈ R$ 111 por saca de 50 kg (paridade teórica)",
-      "es": "≈ R$ 111 por bolsa de 50 kg (paridad teórica)",
-      "en": "≈ R$ 111 per 50 kg sack (theoretical parity)"
+      "pt": "≈ R$ 113 por saca de 50 kg (paridade teórica)",
+      "es": "≈ R$ 113 por bolsa de 50 kg (paridad teórica)",
+      "en": "≈ R$ 113 per 50 kg sack (theoretical parity)"
      },
      "data": "09/11/2026",
      "fonte": "CME/CBOT, via USDA"
@@ -70,11 +70,11 @@
       "es": "Dólar comercial",
       "en": "Commercial dollar"
      },
-     "v": 5.56,
+     "v": 5.65,
      "dec": 2,
      "pre": "R$ ",
-     "var": -0.42,
-     "data": "11/11/2026",
+     "var": 1.58,
+     "data": "12/11/2026",
      "fonte": {
       "pt": "Fechamento",
       "es": "Cierre",
@@ -262,12 +262,12 @@
       "es": "Paraná · bolsa de 60 kg",
       "en": "Paraná · 60 kg sack"
      },
-     "v": 159.87,
+     "v": 160.41,
      "dec": 2,
      "pre": "R$ ",
-     "data": "10/11/2026",
+     "data": "11/11/2026",
      "fonte": "Cepea/Esalq",
-     "var": 0.79
+     "var": 0.34
     },
     {
      "tk": {
@@ -280,12 +280,12 @@
       "es": "Bolsa de 60 kg",
       "en": "60 kg sack"
      },
-     "v": 67.14,
+     "v": 67.3,
      "dec": 2,
      "pre": "R$ ",
-     "data": "10/11/2026",
+     "data": "11/11/2026",
      "fonte": "Cepea/Esalq",
-     "var": 0.39
+     "var": 0.24
     }
    ]
   },
@@ -368,7 +368,7 @@
         "es": "Indicador Cepea en dólares por tonelada",
         "en": "Cepea indicator in US$ per tonne"
        },
-       "v": 292,
+       "v": 287,
        "dec": 0,
        "pre": "US$ ",
        "suf": "/t",
