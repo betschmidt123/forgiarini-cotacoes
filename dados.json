@@ -1,10 +1,10 @@
 {
- "atualizado": "2026-11-13",
- "cambio_usd_brl": 5.65,
+ "atualizado": "2026-11-16",
+ "cambio_usd_brl": 5.66,
  "leitura": {
-  "pt": "O dólar subiu 1,58% em 12/11 e fechou em R$ 5,65, o que eleva a paridade teórica do arroz de Chicago (jan/27, US$ 18,15) para cerca de R$ 113 por saca. No Rio Grande do Sul, a saca de arroz em casca segue perto de R$ 81, pelo último indicador Cepea/Esalq (11/11).",
-  "es": "El dólar subió 1,58% el 12/11 y cerró en R$ 5,65, lo que eleva la paridad teórica del arroz de Chicago (ene/27, US$ 18,15) a cerca de R$ 113 por bolsa. En Rio Grande do Sul, la bolsa de arroz con cáscara sigue cerca de R$ 81, según el último indicador Cepea/Esalq (11/11).",
-  "en": "The dollar rose 1.58% on Nov 12 to close at R$ 5.65, lifting the theoretical parity of Chicago rough rice (Jan 27, US$ 18.15) to about R$ 113 per sack. In Rio Grande do Sul, paddy rice stays near R$ 81 per sack, according to the latest Cepea/Esalq indicator (Nov 11)."
+  "pt": "O dólar fechou a semana em R$ 5,66 (+0,11% em 13/11), o que mantém a paridade teórica do arroz de Chicago (jan/27, US$ 18,15) perto de R$ 113 por saca. No Rio Grande do Sul, a saca de arroz em casca segue perto de R$ 81, pelo último indicador Cepea/Esalq disponível (11/11).",
+  "es": "El dólar cerró la semana en R$ 5,66 (+0,11% el 13/11), lo que mantiene la paridad teórica del arroz de Chicago (ene/27, US$ 18,15) cerca de R$ 113 por bolsa. En Rio Grande do Sul, la bolsa de arroz con cáscara sigue cerca de R$ 81, según el último indicador Cepea/Esalq disponible (11/11).",
+  "en": "The dollar ended the week at R$ 5.66 (+0.11% on Nov 13), keeping the theoretical parity of Chicago rough rice (Jan 27, US$ 18.15) near R$ 113 per sack. In Rio Grande do Sul, paddy rice stays near R$ 81 per sack, according to the latest available Cepea/Esalq indicator (Nov 11)."
  },
  "abas": [
   {
@@ -70,11 +70,11 @@
       "es": "Dólar comercial",
       "en": "Commercial dollar"
      },
-     "v": 5.65,
+     "v": 5.66,
      "dec": 2,
      "pre": "R$ ",
-     "var": 1.58,
-     "data": "12/11/2026",
+     "var": 0.11,
+     "data": "13/11/2026",
      "fonte": {
       "pt": "Fechamento",
       "es": "Cierre",
