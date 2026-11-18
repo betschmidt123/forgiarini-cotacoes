@@ -1,10 +1,10 @@
 {
- "atualizado": "2026-11-17",
+ "atualizado": "2026-11-18",
  "cambio_usd_brl": 5.78,
  "leitura": {
-  "pt": "O dólar disparou 2,13% em 16/11 e fechou em R$ 5,78, o que leva a paridade teórica do arroz de Chicago (jan/27, US$ 18,15) para cerca de R$ 116 por saca. No Rio Grande do Sul, o indicador Cepea/Esalq do arroz em casca recuou 0,20%, para R$ 80,77 por saca.",
-  "es": "El dólar subió 2,13% el 16/11 y cerró en R$ 5,78, lo que lleva la paridad teórica del arroz de Chicago (ene/27, US$ 18,15) a cerca de R$ 116 por bolsa. En Rio Grande do Sul, el indicador Cepea/Esalq del arroz con cáscara bajó 0,20%, a R$ 80,77 por bolsa.",
-  "en": "The dollar jumped 2.13% on Nov 16 to close at R$ 5.78, lifting the theoretical parity of Chicago rough rice (Jan 27, US$ 18.15) to about R$ 116 per sack. In Rio Grande do Sul, the Cepea/Esalq paddy rice indicator fell 0.20% to R$ 80.77 per sack."
+  "pt": "O indicador Cepea/Esalq do arroz em casca no Rio Grande do Sul subiu 1,05% em 17/11, para R$ 81,62 por saca. O dólar ficou estável em R$ 5,78 (+0,09%), e a paridade teórica do arroz de Chicago (jan/27, US$ 18,15) segue perto de R$ 116 por saca.",
+  "es": "El indicador Cepea/Esalq del arroz con cáscara en Rio Grande do Sul subió 1,05% el 17/11, a R$ 81,62 por bolsa. El dólar quedó estable en R$ 5,78 (+0,09%), y la paridad teórica del arroz de Chicago (ene/27, US$ 18,15) sigue cerca de R$ 116 por bolsa.",
+  "en": "The Cepea/Esalq paddy rice indicator in Rio Grande do Sul rose 1.05% on Nov 17 to R$ 81.62 per sack. The dollar held steady at R$ 5.78 (+0.09%), and the theoretical parity of Chicago rough rice (Jan 27, US$ 18.15) stays near R$ 116 per sack."
  },
  "abas": [
   {
@@ -27,11 +27,11 @@
       "es": "Bolsa de 50 kg",
       "en": "50 kg sack"
      },
-     "v": 80.77,
+     "v": 81.62,
      "dec": 2,
      "pre": "R$ ",
-     "var": -0.2,
-     "data": "16/11/2026",
+     "var": 1.05,
+     "data": "17/11/2026",
      "fonte": "Cepea/Esalq"
     },
     {
@@ -73,8 +73,8 @@
      "v": 5.78,
      "dec": 2,
      "pre": "R$ ",
-     "var": 2.13,
-     "data": "16/11/2026",
+     "var": 0.09,
+     "data": "17/11/2026",
      "fonte": {
       "pt": "Fechamento",
       "es": "Cierre",
@@ -244,11 +244,11 @@
       "es": "RS · bolsa de 50 kg",
       "en": "RS · 50 kg sack"
      },
-     "v": 80.77,
+     "v": 81.62,
      "dec": 2,
      "pre": "R$ ",
-     "var": -0.2,
-     "data": "16/11/2026",
+     "var": 1.05,
+     "data": "17/11/2026",
      "fonte": "Cepea/Esalq"
     },
     {
@@ -368,12 +368,12 @@
         "es": "Indicador Cepea en dólares por tonelada",
         "en": "Cepea indicator in US$ per tonne"
        },
-       "v": 280,
+       "v": 282,
        "dec": 0,
        "pre": "US$ ",
        "suf": "/t",
        "aprox": true,
-       "data": "16/11/2026",
+       "data": "17/11/2026",
        "fonte": {
         "pt": "Cepea/Esalq · conversão pelo dólar",
         "es": "Cepea/Esalq · conversión al dólar",
@@ -649,6 +649,10 @@
   [
    "2026-11-16",
    80.77
+  ],
+  [
+   "2026-11-17",
+   81.62
   ]
  ]
 }
