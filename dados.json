@@ -1,10 +1,10 @@
 {
- "atualizado": "2026-11-24",
- "cambio_usd_brl": 5.93,
+ "atualizado": "2026-11-25",
+ "cambio_usd_brl": 5.91,
  "leitura": {
-  "pt": "O indicador Cepea do arroz em casca no Rio Grande do Sul recuou 0,42% em 23/11, para R$ 81,14 por saca. A Conab reduziu a estimativa da safra brasileira 2026/27 para cerca de 10,6 milhões de toneladas. O dólar fechou em R$ 5,93 (−0,15%), e a paridade teórica do arroz de Chicago (jan/27, US$ 18,15) fica perto de R$ 119 por saca.",
-  "es": "El indicador Cepea del arroz con cáscara en Rio Grande do Sul bajó 0,42% el 23/11, a R$ 81,14 por bolsa. Conab redujo su estimación de la cosecha brasileña 2026/27 a cerca de 10,6 millones de toneladas. El dólar cerró en R$ 5,93 (−0,15%), y la paridad teórica del arroz de Chicago (ene/27, US$ 18,15) queda cerca de R$ 119 por bolsa.",
-  "en": "The Cepea paddy rice indicator in Rio Grande do Sul fell 0.42% on Nov 23 to R$ 81.14 per sack. Conab cut its estimate for Brazil's 2026/27 crop to about 10.6 million tonnes. The dollar closed at R$ 5.93 (−0.15%), leaving the theoretical parity of Chicago rough rice (Jan 27, US$ 18.15) near R$ 119 per sack."
+  "pt": "O indicador Cepea do arroz em casca no Rio Grande do Sul recuou 0,39% em 24/11, para R$ 80,82 por saca. A Conab reduziu a estimativa da safra brasileira 2026/27 para cerca de 10,6 milhões de toneladas. O dólar fechou em R$ 5,91 (−0,26%), e a paridade teórica do arroz de Chicago (jan/27, US$ 18,15) fica perto de R$ 118 por saca.",
+  "es": "El indicador Cepea del arroz con cáscara en Rio Grande do Sul bajó 0,39% el 24/11, a R$ 80,82 por bolsa. Conab redujo su estimación de la cosecha brasileña 2026/27 a cerca de 10,6 millones de toneladas. El dólar cerró en R$ 5,91 (−0,26%), y la paridad teórica del arroz de Chicago (ene/27, US$ 18,15) queda cerca de R$ 118 por bolsa.",
+  "en": "The Cepea paddy rice indicator in Rio Grande do Sul fell 0.39% on Nov 24 to R$ 80.82 per sack. Conab cut its estimate for Brazil's 2026/27 crop to about 10.6 million tonnes. The dollar closed at R$ 5.91 (−0.26%), leaving the theoretical parity of Chicago rough rice (Jan 27, US$ 18.15) near R$ 118 per sack."
  },
  "abas": [
   {
@@ -27,11 +27,11 @@
       "es": "Bolsa de 50 kg",
       "en": "50 kg sack"
      },
-     "v": 81.14,
+     "v": 80.82,
      "dec": 2,
      "pre": "R$ ",
-     "var": -0.42,
-     "data": "23/11/2026",
+     "var": -0.39,
+     "data": "24/11/2026",
      "fonte": "Cepea/Esalq"
     },
     {
@@ -52,9 +52,9 @@
      "pre": "US$ ",
      "var": -0.58,
      "nota": {
-      "pt": "≈ R$ 119 por saca de 50 kg (paridade teórica)",
-      "es": "≈ R$ 119 por bolsa de 50 kg (paridad teórica)",
-      "en": "≈ R$ 119 per 50 kg sack (theoretical parity)"
+      "pt": "≈ R$ 118 por saca de 50 kg (paridade teórica)",
+      "es": "≈ R$ 118 por bolsa de 50 kg (paridad teórica)",
+      "en": "≈ R$ 118 per 50 kg sack (theoretical parity)"
      },
      "data": "09/11/2026",
      "fonte": "CME/CBOT, via USDA"
@@ -70,11 +70,11 @@
       "es": "Dólar comercial",
       "en": "Commercial dollar"
      },
-     "v": 5.93,
+     "v": 5.91,
      "dec": 2,
      "pre": "R$ ",
-     "var": -0.15,
-     "data": "23/11/2026",
+     "var": -0.26,
+     "data": "24/11/2026",
      "fonte": {
       "pt": "Fechamento",
       "es": "Cierre",
@@ -244,11 +244,11 @@
       "es": "RS · bolsa de 50 kg",
       "en": "RS · 50 kg sack"
      },
-     "v": 81.14,
+     "v": 80.82,
      "dec": 2,
      "pre": "R$ ",
-     "var": -0.42,
-     "data": "23/11/2026",
+     "var": -0.39,
+     "data": "24/11/2026",
      "fonte": "Cepea/Esalq"
     },
     {
@@ -368,12 +368,12 @@
         "es": "Indicador Cepea en dólares por tonelada",
         "en": "Cepea indicator in US$ per tonne"
        },
-       "v": 274,
+       "v": 273,
        "dec": 0,
        "pre": "US$ ",
        "suf": "/t",
        "aprox": true,
-       "data": "23/11/2026",
+       "data": "24/11/2026",
        "fonte": {
         "pt": "Cepea/Esalq · conversão pelo dólar",
         "es": "Cepea/Esalq · conversión al dólar",
@@ -657,6 +657,10 @@
   [
    "2026-11-23",
    81.14
+  ],
+  [
+   "2026-11-24",
+   80.82
   ]
  ]
 }
