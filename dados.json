@@ -1,10 +1,10 @@
 {
- "atualizado": "2026-11-26",
- "cambio_usd_brl": 5.82,
+ "atualizado": "2026-11-27",
+ "cambio_usd_brl": 5.75,
  "leitura": {
-  "pt": "O indicador Cepea do arroz em casca no Rio Grande do Sul ficou praticamente estável em 25/11 (−0,09%), em R$ 80,75 por saca. A Conab reduziu a estimativa da safra brasileira 2026/27 para cerca de 10,6 milhões de toneladas. O dólar caiu 1,58% e fechou em R$ 5,82; com isso, a paridade teórica do arroz de Chicago (jan/27, US$ 18,15) fica perto de R$ 116 por saca.",
-  "es": "El indicador Cepea del arroz con cáscara en Rio Grande do Sul quedó prácticamente estable el 25/11 (−0,09%), en R$ 80,75 por bolsa. Conab redujo su estimación de la cosecha brasileña 2026/27 a cerca de 10,6 millones de toneladas. El dólar cayó 1,58% y cerró en R$ 5,82; así, la paridad teórica del arroz de Chicago (ene/27, US$ 18,15) queda cerca de R$ 116 por bolsa.",
-  "en": "The Cepea paddy rice indicator in Rio Grande do Sul was nearly flat on Nov 25 (−0.09%) at R$ 80.75 per sack. Conab cut its estimate for Brazil's 2026/27 crop to about 10.6 million tonnes. The dollar fell 1.58% to close at R$ 5.82, leaving the theoretical parity of Chicago rough rice (Jan 27, US$ 18.15) near R$ 116 per sack."
+  "pt": "O indicador Cepea do arroz em casca no Rio Grande do Sul subiu levemente em 26/11 (+0,04%), para R$ 80,78 por saca. O dólar caiu pela quarta sessão seguida (−1,23%) e fechou em R$ 5,75, o menor valor em duas semanas; com isso, a paridade teórica do arroz de Chicago (jan/27, US$ 18,15) fica perto de R$ 115 por saca. A Conab estima a safra brasileira 2026/27 em cerca de 10,6 milhões de toneladas.",
+  "es": "El indicador Cepea del arroz con cáscara en Rio Grande do Sul subió levemente el 26/11 (+0,04%), a R$ 80,78 por bolsa. El dólar cayó por cuarta sesión seguida (−1,23%) y cerró en R$ 5,75, el menor valor en dos semanas; así, la paridad teórica del arroz de Chicago (ene/27, US$ 18,15) queda cerca de R$ 115 por bolsa. Conab estima la cosecha brasileña 2026/27 en cerca de 10,6 millones de toneladas.",
+  "en": "The Cepea paddy rice indicator in Rio Grande do Sul edged up on Nov 26 (+0.04%) to R$ 80.78 per sack. The dollar fell for a fourth straight session (−1.23%) to close at R$ 5.75, its lowest in two weeks, leaving the theoretical parity of Chicago rough rice (Jan 27, US$ 18.15) near R$ 115 per sack. Conab puts Brazil's 2026/27 crop at about 10.6 million tonnes."
  },
  "abas": [
   {
@@ -27,11 +27,11 @@
       "es": "Bolsa de 50 kg",
       "en": "50 kg sack"
      },
-     "v": 80.75,
+     "v": 80.78,
      "dec": 2,
      "pre": "R$ ",
-     "var": -0.09,
-     "data": "25/11/2026",
+     "var": 0.04,
+     "data": "26/11/2026",
      "fonte": "Cepea/Esalq"
     },
     {
@@ -52,9 +52,9 @@
      "pre": "US$ ",
      "var": -0.58,
      "nota": {
-      "pt": "≈ R$ 116 por saca de 50 kg (paridade teórica)",
-      "es": "≈ R$ 116 por bolsa de 50 kg (paridad teórica)",
-      "en": "≈ R$ 116 per 50 kg sack (theoretical parity)"
+      "pt": "≈ R$ 115 por saca de 50 kg (paridade teórica)",
+      "es": "≈ R$ 115 por bolsa de 50 kg (paridad teórica)",
+      "en": "≈ R$ 115 per 50 kg sack (theoretical parity)"
      },
      "data": "09/11/2026",
      "fonte": "CME/CBOT, via USDA"
@@ -70,11 +70,11 @@
       "es": "Dólar comercial",
       "en": "Commercial dollar"
      },
-     "v": 5.82,
+     "v": 5.75,
      "dec": 2,
      "pre": "R$ ",
-     "var": -1.58,
-     "data": "25/11/2026",
+     "var": -1.23,
+     "data": "26/11/2026",
      "fonte": {
       "pt": "Fechamento",
       "es": "Cierre",
@@ -244,11 +244,11 @@
       "es": "RS · bolsa de 50 kg",
       "en": "RS · 50 kg sack"
      },
-     "v": 80.75,
+     "v": 80.78,
      "dec": 2,
      "pre": "R$ ",
-     "var": -0.09,
-     "data": "25/11/2026",
+     "var": 0.04,
+     "data": "26/11/2026",
      "fonte": "Cepea/Esalq"
     },
     {
@@ -368,12 +368,12 @@
         "es": "Indicador Cepea en dólares por tonelada",
         "en": "Cepea indicator in US$ per tonne"
        },
-       "v": 278,
+       "v": 281,
        "dec": 0,
        "pre": "US$ ",
        "suf": "/t",
        "aprox": true,
-       "data": "25/11/2026",
+       "data": "26/11/2026",
        "fonte": {
         "pt": "Cepea/Esalq · conversão pelo dólar",
         "es": "Cepea/Esalq · conversión al dólar",
@@ -665,6 +665,10 @@
   [
    "2026-11-25",
    80.75
+  ],
+  [
+   "2026-11-26",
+   80.78
   ]
  ]
 }
